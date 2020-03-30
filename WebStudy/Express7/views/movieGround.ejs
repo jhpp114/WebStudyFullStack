@@ -1,15 +1,47 @@
 <!-- Adding Partial -->
 <%-include ("partials/header.ejs") %>
+<style>
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .thumbnail {
+        width:200px; 
+        height:200px; 
+        overflow:hidden;
+    }
+    img {
+        width: 100%;
+        height: 100%;
+    }
+</style>
 
-<h1>This is the Movie Page!</h1>
-<a href="/movieground/new">Add New Movie!</a>
-
-<% myMovie.forEach(function(movie) { %>
-    <div>
-        <h4><%=movie.title %></h4>
-        <img src="<%=movie.image %>">
+<div class="container"> <!-- Container Start-->
+    <header class="jumbotron">
+        <h1>Welcome to Movie Land</h1>
+        <p>Check out our collection of movies</p>
+        <br>
+        <a class="btn btn-lg btn-success" href="/movieground/new">Add New Movie!</a>
+    </header>
+    
+    <div class="row">
+        <% myMovie.forEach(function(movie) { %>
+            <div class="col-md-3 col-sm-2">
+                <div class="thumbnail">
+                    <img src="<%=movie.image %>">
+                    <div class="caption">
+                        <h4><%=movie.title %></h4>
+                    </div>
+                </div>
+            </div>
+        <% }); %>
     </div>
-<% }); %>
-
+    
 <!-- Adding Partial -->
 <%-include ("partials/footer.ejs") %>
+</div> <!-- End of Container --> 
+
+
+
+
+
