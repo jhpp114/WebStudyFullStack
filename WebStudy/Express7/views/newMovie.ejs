@@ -1,0 +1,12 @@
+<%-include ("partials/header") %>
+<h2>Adding New Movie</h2>
+<form action="/movieground" method="POST">
+    <label for="title">Movie Name: </label>
+    <input type="text" name="title" placeholder="movie name">
+    <label for="image">Movie Image: </label>
+    <input type="text" name="image" placeholder="image URL">
+    <input type="submit" value="Add Movie!">
+</form>
+
+<a href="/movieground">Go Back</a>
+<%-include ("partials/footer") %>
