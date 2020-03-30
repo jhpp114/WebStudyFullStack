@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Register</title>
+</head>
+<body>
+    <form action="" method="">
+        <fieldset>
+            <legend>
+                Login Info
+            </legend>
+            <div>
+                <label>
+                    Email
+                    <br>
+                    <input type="email" name="email">
+                </label>
+            </div>
+            
+            <div>
+                <label>
+                    Password
+                    <br>
+                    <input type="password" name=password>
+                </label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>About You</legend>
+            <div>
+                <label>Full name
+                    <br>
+                    <input type="text" name="full_name">
+                </label>
+            </div>
+            <div>
+                <label>Brith Date
+                    <br>
+                    <input type="date" name="birth_date">
+                </label>
+            </div>
+            <div>
+                <p>Gender</p>
+                <label>
+                    Male
+                    <input type="radio" name="gender_option" value="">
+                </label>
+                
+                <label>
+                    Female
+                    <input type="radio" name="gender_option" value="">
+                </label>
+            </div>
+            <div>
+                <p>Hobbies</p>
+                <label>
+                    Movie
+                    <input type="checkbox" name="hobby_option" value="">
+                </label>
+                <label>
+                    Sport
+                    <input type="checkbox" name="hobby_option" value="">
+                </label>
+                <label>
+                    Streaming
+                    <input type="checkbox" name="hobby_option" value="">
+                </label>
+                <label>
+                    Chess
+                    <input type="checkbox" name="hobby_option" value="">
+                </label>
+            </div>
+            <div>
+                Income
+                <select name="income">
+                    <option selected>Choose your Income</option>
+                    <option value="$30,000">$30,000</option>
+                    <option value="$60,000">$60,000</option>
+                    <option value="$90,000">$90,000</option>
+                </select>
+            </div><br><br><br>
+            
+            <label>
+                Your Bio
+                <br>
+                <textarea name="dscription" id="" cols="30" rows="10"></textarea>
+            </label>
+        </fieldset>
+        
+        <br>
+        <input type="submit" name="submit" value="Sign Up">
+    </form>
+</body>
+</html>

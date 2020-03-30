@@ -1,0 +1,14 @@
+<!-- Adding Partial -->
+<%-include ("partials/header.ejs") %>
+
+<h1>This is the Movie Page!</h1>
+
+<% myMovie.forEach(function(movie) { %>
+    <div>
+        <h4><%=movie.title %></h4>
+        <img src="<%=movie.image %>">
+    </div>
+<% }); %>
+
+<!-- Adding Partial -->
+<%-include ("partials/footer.ejs") %>

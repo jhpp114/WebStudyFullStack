@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: peru;
+}
+/* Navigation style */
+.navigationItems {
+    margin: 2%;
+}
+.navigationItems li{
+    font-size: 1.2em;
+    display: inline;
+    margin-left: 2%;
+}
+.navigationItems li a {
+    text-align: center;  
+    cursor: pointer;
+}
+.navigationItems li:hover {
+    background: green;
+}
+/* End of Navigation */
+.container1{
+    margin: 10% auto;
+}
+#title {
+    margin: 0 auto;
+    text-align: center;
+}
+.clockContainer {
+    margin: 5% 25%;
+    background: white;
+    border: 1px solid black;
+}
+.clockContainer h3 {
+    text-align: center;
+}
+
+.btn {
+    cursor: pointer;    
+}
+
+.clicked {
+    color: green;
+}

@@ -1,0 +1,55 @@
+h1 {
+    color:red;
+    font-family: sans-serif;
+}
+
+#outer {
+    background-color: yellow;
+}
+
+.paragraph {
+    background-color: blue;
+    color:white;
+}
+#outer :first-child {
+    padding-top: 10px;
+}
+#outer :last-child {
+    padding-bottom: 10px;
+}
+/*Decendent selector*/
+#outer li {
+    color:red;
+    list-style: none;
+    padding: 5px;
+}
+/*Direct Children selector*/
+#outer > li {
+    color: blue;
+}
+img {
+    width: 200px;
+    height: auto;
+}
+
+#outerDiv {
+    display:flex;
+    border: 2px solid black;
+    padding: 5px;
+}
+.prettyBox {
+    border: 2px solid yellow;
+    background-color:#333742;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin: 5px;
+}
+.largeRedText {
+    font-size: 20px;
+    color: red;
+}
+#firstPrettyBox {
+    color: yellow;
+}
+

@@ -1,0 +1,62 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+html {
+    background-color: #303030;
+}
+/*Padding is space between content and border
+in this case 
+the content is The box Model
+border is gray color box*/
+
+/*
+Padding sits inside border
+maring sits outside of the border
+h1 is 610 width
+because
+500 px + 40px (left right) +
+40px left right + 30 border = 610
+*/
+h1 {
+    width: 500px;
+    background-color: #333742;
+    text-align: center;
+    color: #E0E0D1;
+    padding: 20px;
+    border: 15px solid #7DA0CC;
+    margin: 20px 20px;
+}
+div.boxes {
+    background-color: #8797A8;
+    padding: 20px;
+}
+.box{
+    border: 10px solid lightgray;
+    float:left;
+    padding: 20px;
+    /*I do not need the under calc because
+    i used box-sizing: border-box*/
+    /*width: calc(33.33333% - 40px - 20px);*/
+    width: 33.33333%;
+}
+/*Clearfix*/
+.boxes::after {
+    content:"";
+    display:table;
+    clear:both;
+}
+.box1 {
+    background-color: green;
+    color: wheat;
+}
+.box2 {
+    background-color: orange;
+    color: wheat
+}
+.box3 {
+    background-color: grey;
+    color: wheat;
+}

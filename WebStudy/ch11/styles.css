@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: url("./observatory.png");
+}
+.main {
+    background: #ccc;
+    width: 300px;
+    height: 130px;
+    margin: 80px auto;
+    position: relative;
+    padding: 23px;
+}
+.clockly {
+    background: #e66357;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 2px;
+    width: 100px;
+    padding: 5px 8px;
+    position: absolute;
+    top: -10px;
+    left: 33%;
+}
+.clock {
+    background: #EBEBEB;
+    text-align: center;
+    height: 100%;
+    font-size: 50px;
+    padding-top: 15px;
+}

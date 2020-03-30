@@ -1,0 +1,44 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    background-color: #3A4444;
+    padding: 10px;
+}
+.box {
+    width: calc(25% - 44px);
+    border: 2px solid lightgray;
+    color: black;
+    padding: 20px;
+    background-color: wheat;
+    text-align: center;
+    line-height: 1.4em;
+}
+
+.box h2 {
+    color: #2DB475;  
+    
+    margin-bottom: 20px;
+    border-bottom: 2px solid lightgray;
+}
+.left {
+    float: left;
+}
+.clear {
+    clear: both;
+}
+
+.group::before,
+.group::after {
+    content:"";
+    display: table;
+}
+
+.group::after {
+    clear: both
+}
+.group {
+    *zoom: 1;
+}

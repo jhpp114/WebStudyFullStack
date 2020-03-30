@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form Stuffs</title>
+</head>
+<body>
+    <form action="">
+    <!-- first name, last name  -->
+    <label for="firstName">First Name:</label>
+    <input type="text" id="firstName" required>
+    <label for="lastName">Last Name</label>
+    <input type="text" id="lastName" required><br>
+    <!-- Gender + other -->
+    <label for="genderMale">Male</label>
+    <input id="genderMale" name="gender" type="radio" value="male" required>
+    <label for="genderFemale">Female</label>
+    <input id="genderFemale" name="gender" type="radio" value="female" required> <br>
+    <!-- Email and password -->
+    <label for="userEmail">Email: </label>
+    <input name="userEmail" type="email" id="userEmail" required>
+    <label for="password">Password: </label>
+    <input name="password" type="password" id="password" minlength="5" maxlength="10" required> <br>
+    <!-- birthday -->
+    <label for="">Birthday</label>
+    <select name="month" id="" required>
+        <option value="-1" selected>Month</option>
+        <option value="1">Jan</option>
+        <option value="2">Feb</option>
+        <option value="3">March</option>
+    </select>
+    <select name="days" id="" required>
+        <option value="-1">Days</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+    </select>
+    <select name="year" id="" required>
+        <option value="-1">Year</option>
+        <option value="1989">1989</option>
+        <option value="1990">1990</option>
+        <option value="1991">1991</option>
+        <option value="1992">1992</option>
+        <option value="1993">1993</option>
+    </select><br>
+    <label for="termsAgree">I agree to the terms and conditions</label>
+    <input name="termsAgree" type="checkbox" value="yes" id="termsAgree" checked required>Yes
+    <br>
+    <!-- Agree on the condition -->
+
+    <!-- submit -->
+    <input type="submit">
+    </form>
+</body>
+</html>
